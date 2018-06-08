@@ -1,0 +1,8 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.top-ad{
+    background: rgb(155, 0, 0);
+}
