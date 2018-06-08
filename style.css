@@ -1,7 +1,6 @@
 .container {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
 }
 .top-ad {
     background: rgb(155, 0, 0);
@@ -38,6 +37,9 @@
     font-size: 150%;
     font-weight: bold;
 }
+.mid-bar .textNor{
+    font-size: 90%;
+}
 .mid-bar .border { 
     margin: 5px;
     border-radius: 5px;
@@ -65,7 +67,34 @@
     width: 50%;
 }
 
+.body {
+    margin: 10px;
+}
+.menu {
+    justify-content: flex-start;
+    flex-direction: column;
+    text-decoration: none;
+}
 
-.bottom-bar {
-    background: #189eff;
+.menu li {
+    text-decoration: none;
+    margin: 5px; 
+}
+
+.body-child{
+    flex: 1;
+    margin-left: 10px;
+    flex-direction: column;
+}
+.body-child2{
+    flex: 1;
+    margin-left: 10px;
+}
+
+.body-child .imgLarge {
+    width: 50%;
+}
+.body-child .imgSmall {
+    margin: 0;
+    width: 25%;
 }
