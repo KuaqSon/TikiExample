@@ -3,6 +3,64 @@
     align-items: flex-start;
     justify-content: center;
 }
-.top-ad{
+.top-ad {
     background: rgb(155, 0, 0);
+}
+
+.top-bar {
+    background: #1d71ab;
+}
+.top-bar-container {
+    display: flex;  
+    text-decoration: none;
+    justify-content: flex-start;  
+}
+.top-bar a{ 
+    display: inline-block;
+    color: white; 
+    margin: 5px;  
+} 
+.top-bar a.right {
+    justify-self: flex-end;
+}
+
+.mid-bar {
+    background: #189eff;
+}
+.mid-bar-container {
+    display: flex;
+    text-decoration: none;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center; 
+}
+.mid-bar .textLarge{
+    font-size: 150%;
+    font-weight: bold;
+}
+.mid-bar .border { 
+    margin: 5px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+.mid-bar input {
+
+    width: 30%;
+    padding: 10px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.mid-bar button {
+    padding: 10px;
+}
+.mid-bar a {
+    color: white; 
+    margin: 5px;
+    padding: 10px;  
+}
+.mid-bar a img {
+    width: 50%;
 }
