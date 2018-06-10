@@ -1,6 +1,7 @@
 .container {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
 }
 .top-ad {
     background: rgb(155, 0, 0);
@@ -69,8 +70,16 @@
 
 .body {
     margin: 10px;
+    flex-direction: row;
 }
 .menu {
+    border: 1px solid #e1e1e1;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right: 1px solid white;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
     justify-content: flex-start;
     flex-direction: column;
     text-decoration: none;
@@ -78,23 +87,27 @@
 
 .menu li {
     text-decoration: none;
-    margin: 5px; 
+    padding: 7px;
 }
 
 .body-child{
     flex: 1;
-    margin-left: 10px;
-    flex-direction: column;
+    flex-grow: 1;
+    flex-wrap: wrap;
 }
-.body-child2{
-    flex: 1;
-    margin-left: 10px;
+.left {
+    flex-grow: 3;
+}
+.right {
+    flex-grow: 2;
 }
 
-.body-child .imgLarge {
+.imgLarge {
+    width: 100%;
+}
+.imgMedium {
     width: 50%;
 }
-.body-child .imgSmall {
-    margin: 0;
-    width: 25%;
+.imgSmall {
+    width: 50%;
 }
