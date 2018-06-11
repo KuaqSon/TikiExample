@@ -149,13 +149,10 @@
                     <tr>
                         <th>Product </th>
                         <th>Price </th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody id="cart-table">
-                    <tr>
-                        <td>Giày Biti's Nam - HUNTER LITEKNIT -...</td>
-                        <td>650.000 ₫ </td>
-                    </tr>
                 </tbody>
             </table>
         </div>
@@ -172,7 +169,7 @@
                 var Price = Item.find(".product-price").html();
                 
                 var tableCart = $("#cart-table");
-                var product = '<td>' + Detail + '</td>' + '<td>' + Price + '</td>';
+                var product = '<td>' + Detail + '</td>' + '<td>' + Price + '</td>' + '<td> <button>x</button></td>';
                 var newRow = '<tr>' + product + '</tr>';
                 tableCart.append(newRow);
             });
