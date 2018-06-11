@@ -3,14 +3,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="./style.css">
         <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script>
-            $(document).ready(function(){
-                $("button").click(function(){
-                    alert("Product added");
-                });
-            });
-        </script>
+        
     </head>
     <body>
         <div class="top-ad">
@@ -37,7 +30,7 @@
                 <a href="index.html" class="mid-bar-textLarge">TIKI.VN</a>
                 <a href="index.html"><img src="https://vcdn.tikicdn.com/ts/banner/86/f8/17/495420798642eaa7c56af82926386915.png" alt="" class="mid-bar-img"></a>          
                 <input type="text" placeholder="Tìm sản phẩm, danh mục hay thương hiệu mong muốn ..." >
-                <button type="button"><i class="fas fa-search"></i> Tìm Kiếm</button>
+                <button type="submit"><i class="fas fa-search"></i> Tìm Kiếm</button>
                 <i class="fas fa-dolly icon mid-bar-Icon"></i><a href="index.html" class="mid-bar-Item">Theo dõi <br> đơn hàng</a>
                 <i class="fas fa-bell icon mid-bar-Icon"></i><a href="index.html" class="mid-bar-Item">Thông báo <br> của tôi</a>
                 <i class="fas fa-user icon mid-bar-Icon"></i><a href="index.html" class="mid-bar-Item"></i> Đăng Nhập <br> tài khoản</a>
@@ -95,39 +88,36 @@
             <div class="product-item">
                 <a href="index.html">
                     <div>
-                        <img src="https://vcdn.tikicdn.com/cache/200x200/ts/product/d1/88/a5/a880495f1fae5e2e46bc8d71e46fbfd0.jpg" alt="">
+                        <img src="https://vcdn.tikicdn.com/cache/200x200/ts/product/d1/88/a5/a880495f1fae5e2e46bc8d71e46fbfd0.jpg" alt="" class="product-img">
                     </div>
                     <div>
                         Giày Thể Thao Nam Biti's Hunter Midnight...
                     </div>
                     <div>
                         <b>759.000 ₫</b> 
-                    </div>
-                    <button class="product-button">Add </button>
+                    </div>                    
                 </a>
+                <button class="product-button">Add </button>
 
             </div>
             <div class="product-item">
                 <a href="index.html">
                     <div>
-                        <img src="https://vcdn.tikicdn.com/cache/200x200/ts/product/d1/88/a5/a880495f1fae5e2e46bc8d71e46fbfd0.jpg" alt="">
+                        <img src="https://vcdn.tikicdn.com/cache/200x200/ts/product/d1/88/a5/a880495f1fae5e2e46bc8d71e46fbfd0.jpg" alt="" class="product-img">
                     </div>
                     <div>
                         Giày Thể Thao Nam Biti's Hunter Midnight...
                     </div>
                     <div>
                         <b>759.000 ₫</b> 
-                    </div>
-                    
-                    <button class="product-button">
-                        Add
-                    </button>
+                    </div>               
                 </a>
+                <button class="product-button">Add</button>
             </div>
             <div class="product-item">
                 <a href="index.html">
                     <div>
-                        <img src="https://vcdn.tikicdn.com/cache/200x200/ts/product/d1/88/a5/a880495f1fae5e2e46bc8d71e46fbfd0.jpg" alt="">
+                        <img src="https://vcdn.tikicdn.com/cache/200x200/ts/product/d1/88/a5/a880495f1fae5e2e46bc8d71e46fbfd0.jpg" alt="" class="product-img">
                     </div>
                     <div>
                         Giày Thể Thao Nam Biti's Hunter Midnight...
@@ -135,13 +125,13 @@
                     <div>
                         <b>759.000 ₫</b> 
                     </div>
-                    <button class="product-button">Add</button>
                 </a>
+                <button class="product-button">Add</button>
             </div>
             <div class="product-item">
                 <a href="index.html">
                     <div>
-                        <img src="https://vcdn.tikicdn.com/cache/200x200/ts/product/d1/88/a5/a880495f1fae5e2e46bc8d71e46fbfd0.jpg" alt="">
+                        <img src="https://vcdn.tikicdn.com/cache/200x200/ts/product/d1/88/a5/a880495f1fae5e2e46bc8d71e46fbfd0.jpg" alt="" class="product-img">
                     </div>
                     <div>
                         Giày Thể Thao Nam Biti's Hunter Midnight...
@@ -149,11 +139,18 @@
                     <div>
                         <b>759.000 ₫</b> 
                     </div>
-                    <button class="product-button">Add</button>
                 </a>
+                <button class="product-button">Add</button>
             </div>
         </div>
 
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $(".product-button").click(function(){
+                    alert("Product added");
+                });
+            });
+        </script>
     </body>
 </html>
