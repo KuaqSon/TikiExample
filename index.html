@@ -90,10 +90,10 @@
                     <div>
                         <img src="https://vcdn.tikicdn.com/cache/200x200/ts/product/d1/88/a5/a880495f1fae5e2e46bc8d71e46fbfd0.jpg" alt="" class="product-img">
                     </div>
-                    <div>
+                    <div class="product-detail">
                         Giày Thể Thao Nam Biti's Hunter Midnight...
                     </div>
-                    <div>
+                    <div class="product-price">
                         <b>759.000 ₫</b> 
                     </div>                    
                 </a>
@@ -103,13 +103,13 @@
             <div class="product-item">
                 <a href="index.html">
                     <div>
-                        <img src="https://vcdn.tikicdn.com/cache/200x200/ts/product/d1/88/a5/a880495f1fae5e2e46bc8d71e46fbfd0.jpg" alt="" class="product-img">
+                        <img src="https://vcdn.tikicdn.com/cache/200x200/ts/product/e1/24/61/7184596790ef188e48fc9b374b0df745.jpg" alt="" class="product-img">
                     </div>
-                    <div>
-                        Giày Thể Thao Nam Biti's Hunter Midnight...
+                    <div class="product-detail">
+                        Giày Thể Thao Nữ Biti's Hunter Collection... 
                     </div>
-                    <div>
-                        <b>759.000 ₫</b> 
+                    <div class="product-price">
+                        680.000 ₫
                     </div>               
                 </a>
                 <button class="product-button">Add</button>
@@ -117,13 +117,13 @@
             <div class="product-item">
                 <a href="index.html">
                     <div>
-                        <img src="https://vcdn.tikicdn.com/cache/200x200/ts/product/d1/88/a5/a880495f1fae5e2e46bc8d71e46fbfd0.jpg" alt="" class="product-img">
+                        <img src="https://vcdn.tikicdn.com/cache/200x200/ts/product/30/c8/05/a01a6f68cfe564e7ab9729908e821a72.jpg" alt="" class="product-img">
                     </div>
-                    <div>
-                        Giày Thể Thao Nam Biti's Hunter Midnight...
+                    <div class="product-detail"> 
+                        Giày Thể Thao Nam Biti's Hunter Collection... 
                     </div>
-                    <div>
-                        <b>759.000 ₫</b> 
+                    <div class="product-price">
+                        899.000 ₫
                     </div>
                 </a>
                 <button class="product-button">Add</button>
@@ -131,26 +131,52 @@
             <div class="product-item">
                 <a href="index.html">
                     <div>
-                        <img src="https://vcdn.tikicdn.com/cache/200x200/ts/product/d1/88/a5/a880495f1fae5e2e46bc8d71e46fbfd0.jpg" alt="" class="product-img">
+                        <img src="https://vcdn.tikicdn.com/cache/200x200/ts/product/a4/eb/79/806b2435f0c76d11c91c198c8ac1ee99.jpg" alt="" class="product-img">
                     </div>
-                    <div>
-                        Giày Thể Thao Nam Biti's Hunter Midnight...
+                    <div class="product-detail">
+                        Giày Biti's Nam - HUNTER LITEKNIT -... 
                     </div>
-                    <div>
-                        <b>759.000 ₫</b> 
+                    <div class="product-price">
+                        650.000 ₫ 
                     </div>
                 </a>
                 <button class="product-button">Add</button>
             </div>
         </div>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product </th>
+                        <th>Price </th>
+                    </tr>
+                </thead>
+                <tbody id="cart-table">
+                    <tr>
+                        <td>Giày Biti's Nam - HUNTER LITEKNIT -...</td>
+                        <td>650.000 ₫ </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script>
-            $(document).ready(function(){
-                $(".product-button").click(function(){
-                    alert("Product added");
-                });
+            $(".product-button").click(function(){
+                var btn = $(this);
+                var Item = btn.closest(".product-item");
+                var Detail = Item.find(".product-detail").html();
+                var Price = Item.find(".product-price").html();
+                
+                var tableCart = $("#cart-table");
+                var product = '<td>' + Detail + '</td>' + '<td>' + Price + '</td>';
+                var newRow = '<tr>' + product + '</tr>';
+                tableCart.append(newRow);
             });
+
         </script>
     </body>
 </html>

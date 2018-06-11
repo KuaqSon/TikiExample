@@ -206,8 +206,27 @@
 .product-item:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.product-detail {
+    color: #444;
+}
+.product-price {
+    font-weight: bold;
+}
 
 .product-item:hover .product-button {
     opacity: 1;
     /* transition: background-color 2s ease-out; */
+}
+
+table {
+    margin: 10px,0;
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+td, th {
+    border: 1px solid #ada9a9;
+    text-align: left;
+    padding: 8px;
 }
