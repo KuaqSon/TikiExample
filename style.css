@@ -51,7 +51,7 @@
 }
 
 .mid-bar-img {
-    width: 50%;
+    max-width: 90px;
 }
 
 .mid-bar .textLarge{
@@ -120,10 +120,13 @@
 
 .menu li {
     text-decoration: none;
-    padding: 7px;
+    padding: 8px;
+    color: #444;
+    font-size: 90%;
 }
 .menu li:hover {
     background-color: #189eff;
+    color: white;
 }
 .menu-Icon {
     margin-right: 5px;
