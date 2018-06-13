@@ -94,7 +94,7 @@
                         Giày Thể Thao Nam Biti's Hunter Midnight...
                     </div>
                     <div class="product-price">
-                        <b>759.000 ₫</b> 
+                        759.000 ₫
                     </div>                    
                 </a>
                 <button class="product-button">Add </button>
@@ -169,10 +169,15 @@
                 var Price = Item.find(".product-price").html();
                 
                 var tableCart = $("#cart-table");
-                var product = '<td>' + Detail + '</td>' + '<td>' + Price + '</td>' + '<td> <button>x</button></td>';
+                var product = '<td>' + Detail + '</td>' + '<td>' + Price + '</td>' + '<td> <button class="delete-button">x</button></td>';
                 var newRow = '<tr>' + product + '</tr>';
                 tableCart.append(newRow);
             });
+
+            $("#cart-table").on("click", ".delete-button", function () {
+                $(this).closest('tr').remove();
+            });
+
 
         </script>
     </body>
